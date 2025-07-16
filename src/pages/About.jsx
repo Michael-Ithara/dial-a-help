@@ -24,7 +24,7 @@ export default function About() {
   return (
     <motion.main
       {...pageFade}
-      className="max-w-7xl mx-auto px-6 py-20 space-y-24 bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100"
+      className="pt-28 max-w-7xl mx-auto px-4 sm:px-6 py-20 space-y-24 bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100"
     >
       {/* Mission */}
       <motion.section
@@ -34,12 +34,15 @@ export default function About() {
         variants={fadeUp}
         className="text-center space-y-6"
       >
-        <motion.h2 variants={fadeUp} className="text-5xl font-extrabold text-emerald-600">
+        <motion.h2
+          variants={fadeUp}
+          className="text-3xl sm:text-5xl font-extrabold text-emerald-600"
+        >
           Our Mission
         </motion.h2>
         <motion.p
           variants={fadeUp}
-          className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto"
+          className="text-base sm:text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto"
         >
           To empower individuals with practical, hands-on skills through accessible and flexible
           apprenticeship programs — enabling lifelong learning and career advancement beyond
@@ -48,7 +51,7 @@ export default function About() {
       </motion.section>
 
       {/* What We Do */}
-      <section className="grid sm:grid-cols-2 gap-12 items-center">
+      <section className="grid grid-cols-1 sm:grid-cols-2 gap-12 items-center">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -57,8 +60,10 @@ export default function About() {
           variants={fadeUp}
           className="space-y-5"
         >
-          <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-100">What We Do</h3>
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+          <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-gray-100">
+            What We Do
+          </h3>
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base sm:text-lg">
             Dial A Help bridges the gap between education and employment for underserved
             communities. We connect learners — especially those without formal education — to
             real apprenticeship programs and provide AI-powered support to help them thrive.
@@ -79,10 +84,10 @@ export default function About() {
           variants={fadeUp}
           className="bg-emerald-50 dark:bg-gray-800 rounded-xl p-8 shadow-md text-center"
         >
-          <h4 className="text-xl font-bold text-emerald-700 dark:text-emerald-400 mb-2">
+          <h4 className="text-lg sm:text-xl font-bold text-emerald-700 dark:text-emerald-400 mb-2">
             Why It Works
           </h4>
-          <p className="text-gray-800 dark:text-gray-200">
+          <p className="text-gray-800 dark:text-gray-200 text-base sm:text-lg">
             We remove barriers to learning by meeting people where they are — digitally,
             personally, practically.
           </p>
@@ -95,12 +100,12 @@ export default function About() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeUp}
-        className="bg-gradient-to-br from-emerald-700 to-emerald-900 text-white py-16 px-6 rounded-2xl shadow-md"
+        className="bg-gradient-to-br from-emerald-700 to-emerald-900 text-white py-16 px-4 sm:px-6 rounded-2xl shadow-md"
       >
-        <h3 className="text-3xl font-bold text-center mb-10">
+        <h3 className="text-2xl sm:text-3xl font-bold text-center mb-10">
           The Challenges We’re Solving
         </h3>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 text-center text-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center text-base sm:text-lg">
           {[
             'Limited Access to Education',
             'Unemployment',
@@ -129,8 +134,10 @@ export default function About() {
         variants={fadeUp}
         className="text-center space-y-6"
       >
-        <h3 className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">Looking Ahead</h3>
-        <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+        <h3 className="text-2xl sm:text-3xl font-bold text-emerald-700 dark:text-emerald-400">
+          Looking Ahead
+        </h3>
+        <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
           We're just getting started. We plan to expand into more counties, scale our partnerships,
           and introduce new AI-driven learning features to better support every learner's journey.
         </p>
